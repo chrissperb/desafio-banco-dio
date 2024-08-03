@@ -1,6 +1,8 @@
+package com.desafiobancodio;
+
 public class ContaPoupanca extends Conta {
 
-    // Construtor da classe ContaPoupanca
+    // Construtor da classe com.desafiobancodio.ContaPoupanca
     public ContaPoupanca(Cliente cliente) {
         super(cliente);
     }

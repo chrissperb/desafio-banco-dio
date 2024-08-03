@@ -1,6 +1,8 @@
+package com.desafiobancodio;
+
 public class ContaCorrente extends Conta {
 
-    // Construtor da classe ContaCorrente
+    // Construtor da classe com.desafiobancodio.ContaCorrente
     public ContaCorrente(Cliente cliente) {
         super(cliente);
     }

@@ -1,3 +1,5 @@
+package com.desafiobancodio;
+
 public class Cliente {
     // Atributos do cliente
     private String nome;

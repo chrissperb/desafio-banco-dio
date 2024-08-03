@@ -1,3 +1,5 @@
+package com.desafiobancodio;
+
 public abstract class Conta implements IConta {
 
     // Constantes e variáveis de classe
@@ -17,7 +19,7 @@ public abstract class Conta implements IConta {
         this.cliente = cliente;
     }
 
-    // Implementação dos métodos da interface IConta
+    // Implementação dos métodos da interface com.desafiobancodio.IConta
     @Override
     public void depositar(double valor) {
         saldo += valor;
@@ -52,7 +54,7 @@ public abstract class Conta implements IConta {
         System.out.println("Titular: " + cliente.getNome());
         System.out.println("CPF: " + cliente.getCpf());
         System.out.println(String.format("Agencia: %d", this.agencia));
-        System.out.println(String.format("Conta: %d", this.numero));
+        System.out.println(String.format("com.desafiobancodio.Conta: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 }

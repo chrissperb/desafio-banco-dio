@@ -1,3 +1,5 @@
+package com.desafiobancodio;
+
 public interface IConta {
     // Métodos abstratos para operações bancárias
     void depositar(double valor);
