@@ -1,6 +1,7 @@
 package com.desafiobancodio;
 
 import com.desafiobancodio.enums.TipoTransacao;
+import com.desafiobancodio.exceptions.SaldoInsuficienteException;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -40,16 +41,23 @@ public abstract class Conta implements IConta {
 
     @Override
     public void sacar(double valor) {
+        if (saldo < valor) {
+            throw new SaldoInsuficienteException("Saldo insuficiente para saque.");
+        }
         saldo -= valor;
         historicoTransacoes.add(new Transacao(valor, TipoTransacao.SAQUE));
     }
 
     @Override
     public void transferir(double valor, IConta contaDestino) {
+        if (saldo < valor) {
+            throw new SaldoInsuficienteException("Saldo insuficiente para transferência.");
+        }
         this.sacar(valor);
         contaDestino.depositar(valor);
         historicoTransacoes.add(new Transacao(valor, TipoTransacao.TRANSFERENCIA));
     }
+
 
     // Método para exibir informações comuns das contas
     public void exibirInfosComuns() {
