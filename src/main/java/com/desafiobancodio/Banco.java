@@ -1,7 +1,14 @@
 package com.desafiobancodio;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.util.List;
 
+@Setter
+@Getter
+@ToString
 public class Banco {
     // Nome do banco
     public String nome;
@@ -9,21 +16,4 @@ public class Banco {
     // Lista de contas do banco
     private List<Conta> contas;
 
-    // Métodos getter e setter para o nome do banco
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Métodos getter e setter para a lista de contas
-    public List<Conta> getContas() {
-        return contas;
-    }
-
-    public void setContas(List<Conta> contas) {
-        this.contas = contas;
-    }
 }

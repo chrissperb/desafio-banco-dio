@@ -1,5 +1,7 @@
 package com.desafiobancodio;
 
+import lombok.Getter;
+
 public abstract class Conta implements IConta {
 
     // Constantes e variáveis de classe
@@ -7,9 +9,13 @@ public abstract class Conta implements IConta {
     private static int SEQUENCIAL = 1;
 
     // Atributos protegidos
-    protected int agencia;
-    protected int numero;
+    // Métodos setter não adicionados propositalmente
+    @Getter
     protected double saldo;
+    @Getter
+    protected int agencia;
+    @Getter
+    protected int numero;
     protected Cliente cliente;
 
     // Construtor da classe
@@ -34,19 +40,6 @@ public abstract class Conta implements IConta {
     public void transferir(double valor, IConta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
-    }
-
-    // Métodos getter, setter não adicionados propositalmente
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public int getAgencia() {
-        return agencia;
     }
 
     // Método para exibir informações comuns das contas
