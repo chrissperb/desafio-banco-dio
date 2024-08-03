@@ -24,6 +24,11 @@ src
 │   ├── java
 │   │   └── com
 │   │       └── desafiobancodio
+│   │           │   └── enums
+│   │           │   │   ├── TipoConta.java
+│   │           │   │   ├── TipoTransacao.java
+│   │           │   └── exceptions
+│   │           │       ├── SaldoInsuficenteException.java
 │   │           ├── Banco.java
 │   │           ├── Cliente.java
 │   │           ├── Conta.java
@@ -31,9 +36,7 @@ src
 │   │           ├── ContaPoupanca.java
 │   │           ├── IConta.java
 │   │           ├── Main.java
-│   │           ├── SaldoInsuficienteException.java
-│   │           ├── TipoConta.java
-│   │           └── TipoTransacao.java
+│   │           └── Transacao.java
 │   └── resources
 └── test
 
