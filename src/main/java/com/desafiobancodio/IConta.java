@@ -8,5 +8,7 @@ public interface IConta {
 
     void transferir(double valor, IConta contaDestino);
 
+    void exibirInfosComuns();
+
     void imprimirExtrato();
 }
