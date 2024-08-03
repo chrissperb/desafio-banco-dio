@@ -26,9 +26,9 @@ src
 │   │       └── desafiobancodio
 │   │           │   └── enums
 │   │           │   │   ├── TipoConta.java
-│   │           │   │   ├── TipoTransacao.java
+│   │           │   │   └── TipoTransacao.java
 │   │           │   └── exceptions
-│   │           │       ├── SaldoInsuficenteException.java
+│   │           │       └── SaldoInsuficenteException.java
 │   │           ├── Banco.java
 │   │           ├── Cliente.java
 │   │           ├── Conta.java
