@@ -1,4 +1,5 @@
 public interface IConta {
+    // Métodos abstratos para operações bancárias
     void depositar(double valor);
 
     void sacar(double valor);

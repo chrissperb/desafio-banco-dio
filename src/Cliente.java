@@ -1,7 +1,9 @@
 public class Cliente {
+    // Atributos do cliente
     private String nome;
     private String cpf;
 
+    // Métodos getter e setter para os atributos
     public String getNome() {
         return nome;
     }
@@ -18,3 +20,4 @@ public class Cliente {
         this.cpf = cpf;
     }
 }
+
